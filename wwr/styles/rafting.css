@@ -1,14 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Your+Selected+Font');
-
-/* Define CSS variables */
 :root {
   --primary-color: #333333;
   --secondary-color: #ffffff;
   --accent-color: #ff0000;
 }
 
-/* Heading and paragraph styles */
 h1, h2, h3 {
   color: var(--primary-color);
 }
@@ -17,18 +14,16 @@ p {
   color: var(--secondary-color);
 }
 
-/* Social media links */
 .social-media a {
   text-decoration: none;
 }
 
-/* Page container width */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Hero Container */
 .hero {
   position: relative;
 }
