@@ -1,0 +1,63 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Your+Selected+Font');
+
+/* Define CSS variables */
+:root {
+  --primary-color: #333333;
+  --secondary-color: #ffffff;
+  --accent-color: #ff0000;
+}
+
+/* Heading and paragraph styles */
+h1, h2, h3 {
+  color: var(--primary-color);
+}
+
+p {
+  color: var(--secondary-color);
+}
+
+/* Social media links */
+.social-media a {
+  text-decoration: none;
+}
+
+/* Page container width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Container */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero article img {
+  float: right;
+}
+
+.hero article {
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0.8;
+}
