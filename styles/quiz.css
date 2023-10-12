@@ -39,7 +39,7 @@ select {
 button[type="submit"] {
     display: block;
     margin: 0 auto;
-    padding: 20px 200px;
+    padding: 20px 100px;
     background-color: #0b6d0f;
     color: #fff;
     border: none;
