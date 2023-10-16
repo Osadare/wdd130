@@ -22,7 +22,47 @@
   --nav-hover-link-color: white;
   --nav-hover-background-color: #404346;
 }
+ 
+ 
+.header-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
 
+.header-grid img {
+  max-width: 100%;
+}
+
+.header-grid nav {
+  text-align: right;
+}
+
+.header-grid a {
+  margin-left: 20px;
+  color: #333;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .header-grid {
+    grid-template-columns: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header-grid nav {
+    
+    text-align: center;
+  }
+
+
+  .header-grid a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+ 
 /* General Styles */
 body {
   margin: 10%;
@@ -108,7 +148,8 @@ footer {
   margin-top: 40px;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: center; 
+  flex-direction: left;
 }
 
 footer a {
@@ -197,3 +238,85 @@ footer a:hover {
  margin-left: 0px;
 } 
  
+
+
+/* Styles for company information section */
+#company-info {
+  margin: 20px 0;
+}
+
+.address, .phone, .email {
+  margin-bottom: 10px;
+}
+
+/* Styles for employee profiles */
+#employees {
+  margin: 40px auto;
+  max-width: 800px;
+  text-align: center; 
+
+}
+
+.employee {
+  display: inline-block;
+  text-align: center;
+  margin-right: 20px; 
+ 
+}
+
+.employee img {
+  width: 200px;
+  height:190px;
+  border-radius: 50%;
+  margin-bottom: 10px;  
+  border: 2px solid #000000;
+}
+
+
+.employee .name {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.employee .title {
+  font-style: italic; 
+  margin-top: 2px; 
+  font-weight: semi-bold;
+}
+
+/* Styles for contact form */
+#contact-form {
+  margin: 20px auto;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f2f2f2; 
+  margin-top: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 90%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+form input[type="submit"] {
+  background-color: #555557;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #a5b7c3;
+} 
