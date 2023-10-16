@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Contact Us | Rafting Adventures</title>  
-    <meta name="description" content="The rafting site plan includes the site purpose, the target audience, branding information, and a style guide for the course website project."> 
-    <meta name="author" content="Bunmi osadare">   
+    <title>Contact | Rafting Adventures</title>  
+    <meta name="description" content="Plan your next adventure with our expert rafting team. Experience the thrill of navigating breathtaking rapids and immerse yourself in the stunning natural surroundings. Contact us today to book your unforgettable river rafting experience."><meta name="author" content="Bunmi osadare">   
     <link rel="stylesheet" href="styles/rafting.css"> 
 </head>
 <body>
@@ -65,24 +64,27 @@
             <form action="submit_form.php" method="POST">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
-
+            
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
-
-                <label for="purpose">Purpose of Message:</label>
-                <select id="purpose" name="purpose">
-                    <option value="General Inquiry">General Inquiry</option>
-                    <option value="Reservation Question">Reservation Question</option>
-                    <option value="Website Suggestion">Website Suggestion</option>
-                </select>
-
+            
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <input type="radio" id="inquiry" name="purpose" value="General Inquiry" checked>
+                    <label for="inquiry">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                    <label for="suggestion">Website Suggestion</label><br>
+                </fieldset>
+            
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" required></textarea>
-
+            
                 <label for="newsletter">Please subscribe me to the monthly newsletter:</label>
                 <input type="checkbox" id="newsletter" name="newsletter">
-
-                <input type="submit" value="Submit">
+            
+                <button type="submit">Submit</button>
             </form>
         </section>
     </main>

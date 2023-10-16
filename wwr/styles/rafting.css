@@ -66,7 +66,7 @@
 /* General Styles */
 body {
   margin: 10%;
-  padding: 30;
+  padding: 0;
 }
 
 .container {
@@ -149,7 +149,7 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center; 
-  flex-direction: left;
+  
 }
 
 footer a {
@@ -281,7 +281,7 @@ footer a:hover {
 .employee .title {
   font-style: italic; 
   margin-top: 2px; 
-  font-weight: semi-bold;
+  
 }
 
 /* Styles for contact form */
@@ -295,11 +295,22 @@ footer a:hover {
   margin-top: 20px;
 }
 
-form label {
+label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   font-weight: bold;
 }
+ 
+select {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-bottom: 10px;
+}
+
 
 form input,
 form select,
@@ -308,15 +319,22 @@ form textarea {
   padding: 8px;
   margin-bottom: 10px;
 }
-
-form input[type="submit"] {
-  background-color: #555557;
-  color: white;
+ 
+ 
+button[type="submit"] {
   padding: 10px 20px;
+  background-color: #6a6d6b;
+  color: white;
   border: none;
   cursor: pointer;
 }
 
-form input[type="submit"]:hover {
-  background-color: #a5b7c3;
-} 
+button[type="submit"]:hover {
+  background-color: #b2b6b2;
+}
+
+ 
+
+p {
+  color: rgb(62, 62, 63);
+}
