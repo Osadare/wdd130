@@ -188,8 +188,7 @@ footer a:hover {
 .content-container {
   display: flex;
   justify-content: center;
-  align-items: left;
-  
+  align-items: flex-start;
 }
 
 .text-left,
@@ -220,7 +219,9 @@ footer a:hover {
 }
 
 .adventures-grid figure {
-  flex: 10% 20% 40%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 40%;
   margin: 0;
   text-align: center;
 }
@@ -230,7 +231,7 @@ footer a:hover {
   height: auto;
   border-radius: 5px;
   grid-template-columns: auto 1fr;
-  align-items: right;
+  justify-content: flex-end;
 }
 
 .adventures-grid figcaption {
